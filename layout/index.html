@@ -139,7 +139,7 @@
 
          <div v-for="(article, index) in articles" v-if="index < 3" class="blog__item">
             <div class="blog__item-image">
-               <img :src="'image/' + article.image" alt="blog-image-2">
+               <img :src="'image/' + article.image" :alt="article.image">
                <p class="blog__img-text">{{article.imgText}}</p>
             </div>
             <h2 class="blog__item-title">{{article.itemTitle}}</h2>
